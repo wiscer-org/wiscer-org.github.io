@@ -6,67 +6,186 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About wiscer.org</title>
+
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+        integrity="sha256-+C1NV6XhV2d0nCtuLfHYZAw2IgC6zOtC1Xag2+a0fMU=" crossorigin="anonymous">
+
+    <!-- Foundation Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-icons@3.0.0/foundation-icons.css"
+        integrity="sha256-PbAisGYhHvu2Dgxh+uQ+LpnN5d8kVYg5f1YV7n8kVqU=" crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            /* Light white background */
+            color: #2c3e50;
+            /* Darker text for contrast */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        header {
+            background-image: url('images/dall-e_homepage.webp');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            /* Adjust padding as needed */
+            text-align: center;
+            color: #ffffff;
+            /* Ensure text is readable over the image */
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(52, 152, 219, 0.5);
+            /* Blue overlay with transparency */
+            z-index: 1;
+        }
+
+        header .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+        }
+
+        a {
+            color: #3498db;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        footer {
+            background-color: #ffffff;
+            padding: 20px 0;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #95a5a6;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Additional responsive adjustments if needed */
+    </style>
 </head>
 
 <body>
+
+    <!-- Header with Background Image -->
+    <header>
+        <div class="header-content">
+            <h1>About wiscer.org</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
     <main>
-        <h1>About wiscer.org</h1>
-        <h2>Wiscer.og</h2>
-        <p><strong>Wiscer</strong> is a short for <strong>with screen reader</strong>.</p>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell">
+                    <h2>Wiscer.org</h2>
+                    <p><strong>Wiscer</strong> is short for <strong>with screen reader</strong>.</p>
 
-        <h2>Our Vision</h2>
-        <p>
-            Our vision is to enable people with screen readers in the area of online activities and software
-            ddevelopment.
-        </p>
+                    <h2>Our Vision</h2>
+                    <p>
+                        Our vision is to enable people with screen readers in the area of online activities and software
+                        development.
+                    </p>
 
-        <h2>Our Missions</h2>
-        <ul>
-            <li>Screen reader users to have more guidance and learning digital materials.</li>
-            <li>Screen reader users to have more accessible web sites and apps.</li>
-            <li>Community in general to have more awareness about screen reader and accessibility.</li>
-        </ul>
+                    <h2>Our Missions</h2>
+                    <ul>
+                        <li>Provide screen reader users with more guidance and learning digital materials.</li>
+                        <li>Ensure screen reader users have access to more accessible websites and apps.</li>
+                        <li>Increase community awareness about screen readers and accessibility.</li>
+                    </ul>
 
-        <h2>Our Activities</h2>
-        <ul>
-            <li>
-                Produce digital content to ehlp screen reader users to do online activities and learn software
-                development.
-            </li>
-            <li>
-                Develop more screen reader friendly web / apps by involve in open source projects or develop new ones.
-            </li>
-            <li>
-                Produce digital content to help developers or organizations
-                to develop more screen reader friendly web / apps.
-            </li>
-        </ul>
+                    <h2>Our Activities</h2>
+                    <ul>
+                        <li>
+                            Produce digital content to help screen reader users engage in online activities and learn
+                            software
+                            development.
+                        </li>
+                        <li>
+                            Develop more screen reader-friendly websites/apps by participating in open source projects
+                            or creating new ones.
+                        </li>
+                        <li>
+                            Create digital content to assist developers or organizations in developing more screen
+                            reader-friendly websites/apps.
+                        </li>
+                    </ul>
 
-        <p>The digital content could be <a href="https://dev.to">dev.to articles </a> or Youtube videos.</p>
+                    <p>The digital content could be <a href="https://dev.to" target="_blank" rel="noopener">dev.to
+                            articles</a> or YouTube videos.</p>
 
-        <h2>Screen Reader and Technologies </h2>
-        <p>
-            Screen reader is a type of computer software that read what is on computer to voice.
-            Screen readers are used by people with vision proble (e.g. : blindness, vision impairment, etc)
-            or people who can process voice better than vision.
-        </p>
-        <p>
-            We currently focus on NVDA screen reader on Windows 10 or Windows 11.
-            NVDA is a Windows based <strong>free open source</strong> screen reader developed by NVAccess.
-            NVDA is funded by grants and donations.
-        </p>
+                    <h2>Screen Reader and Technologies</h2>
+                    <p>
+                        A screen reader is a type of computer software that reads the content on a computer screen
+                        aloud. Screen readers are used by people with vision problems (e.g., blindness, vision
+                        impairment, etc.)
+                        or by individuals who can process voice better than visual information.
+                    </p>
+                    <p>
+                        We currently focus on the NVDA screen reader on Windows 10 or Windows 11.
+                        NVDA is a Windows-based <strong>free open source</strong> screen reader developed by NVAccess.
+                        NVDA is funded by grants and donations.
+                    </p>
 
-        <h2>Contact Us</h2>
-        <p>
-            You can contact us through our <strong>wiscer.org</strong>, a <strong>gmail.com</strong> account.
-            Any feedbacks would be really appreciated!
-        </p>
-
+                    <h2>Contact Us</h2>
+                    <p>
+                        You can contact us through our <strong>wiscer.org</strong> website or via a
+                        <strong>gmail.com</strong> account.
+                        Any feedback would be greatly appreciated!
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <div>wiscer.org | 2022</div>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell">
+                    <p>&copy; 2024 wiscer.org. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJ56vR3+EJyx5KDxC96/XQF8gdh3wER4ve36M=" crossorigin="anonymous"></script>
+
+    <!-- Foundation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
+        integrity="sha256-ZpM1BvK/rjXgrQcqoxAmXKrLOVYKDTyUQEFoK3rLvqk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 
 </html>
