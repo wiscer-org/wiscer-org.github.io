@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageLive: The Accessible Companion for Gemini AI</title>
+    <meta name="description"
+        content="Free Chrome extension to enhance Gemini AI accessibility for screen reader users with keyboard shortcuts and event announcements.">
+    <style>
+        /* Base Reset and Typography */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 30px 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headings */
+        h1,
+        h2,
+        h3 {
+            color: #1a73e8;
+            /* Google/Gemini primary color inspiration */
+            line-height: 1.2;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 4px 8px rgba(26, 115, 232, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #155bb5;
+            transform: translateY(-1px);
+        }
+
+        /* Content Sections */
+        .section-content {
+            margin-bottom: 40px;
+        }
+
+        /* Table (Mini-Tutorial Highlight) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e8f0fe;
+            /* Light blue header */
+            color: #1a73e8;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #fcfcfc;
+        }
+
+        /* Footer / Secondary CTA */
+        .footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="hero">
+            <h1>PageLive: The Accessible Companion for Gemini AI</h1>
+            <p>Stop wrestling with manual navigation. PageLive provides instant announcements and keyboard shortcuts to
+                make your screen reader experience with Gemini fast and efficient.</p>
+
+            <a href="[LINK_TO_CHROME_WEB_STORE]" class="cta-button">
+                ⚡ Add PageLive to Chrome (It's Free)
+            </a>
+            <p style="margin-top: 15px; font-size: 0.95em;">Built by a screen reader user, for screen reader users.</p>
+        </header>
+
+        <section class="section-content">
+            <h2>Why PageLive?</h2>
+            <p>Using a screen reader on Gemini means constant, manual switching between input, responses, and side
+                panels. It slows down your workflow. PageLive eliminates the friction. It monitors the page and puts
+                crucial actions—like navigating to the input or reviewing the last response—right at your fingertips.
+            </p>
+        </section>
+
+        <section class="section-content">
+            <h2>Streamline Your Gemini Workflow</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Shortcut</th>
+                        <th>Why You'll Use It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jump to Input</td>
+                        <td><code>Shift + Esc</code></td>
+                        <td>Instantly start typing your next prompt.</td>
+                    </tr>
+                    <tr>
+                        <td>Review Last Response</td>
+                        <td><code>Ctrl + Shift + Enter</code></td>
+                        <td>Quickly re-read the AI's last reply.</td>
+                    </tr>
+                    <tr>
+                        <td>View Conversation Map</td>
+                        <td><code>Ctrl + M</code></td>
+                        <td>See an overview of all prompts/responses and quickly jump to any point.</td>
+                    </tr>
+                    <tr>
+                        <td>Start New Chat</td>
+                        <td><code>Ctrl + Alt + O</code></td>
+                        <td>Clear the deck and begin fresh in a single press.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section-content">
+            <h2>Technical Details</h2>
+            <ul>
+                <li>**Designed for Accessibility:** PageLive is a screen reader companion developed and tested with
+                    NVDA, leveraging standard HTML ARIA attributes for broad compatibility (including JAWS).</li>
+                <li>**Current Version:** 3.0.0</li>
+                <li>**License:** Free and Open Source.</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <h3>Ready to Chat Smarter?</h3>
+            <a href="[LINK_TO_CHROME_WEB_STORE]" class="cta-button">
+                Install PageLive Today
+            </a>
+            <p style="margin-top: 20px; font-size: 0.8em; color: #777;">&copy; [YEAR] PageLive. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
