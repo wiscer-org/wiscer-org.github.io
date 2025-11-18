@@ -46,7 +46,7 @@
 
         h2 {
             font-size: 1.8em;
-            /* margin-top: 1.5em; */
+            margin-top: 1.5em;
             border-bottom: 2px solid #e0e0e0;
             padding-bottom: 5px;
             margin-bottom: 15px;
@@ -55,15 +55,14 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 20px 0;
-            margin-bottom: 15px;
-            /* border-bottom: 1px solid #ddd; */
+            padding: 40px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
         }
 
         .hero p {
             font-size: 1.2em;
-            margin-bottom: 15px;
-            padding: 10px 12%;
+            margin-bottom: 25px;
             color: #555;
         }
 
@@ -117,6 +116,13 @@
             background-color: #fcfcfc;
         }
 
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
         /* Footer / Secondary CTA */
         .footer {
             text-align: center;
@@ -131,11 +137,12 @@
     <div class="container">
 
         <header class="hero">
-            <h1>PageLive: The Accessible Companion <br />for Gemini AI</h1>
+            <h1>PageLive: The Accessible Companion for Gemini AI</h1>
             <p>Stop wrestling with manual navigation. PageLive provides instant announcements and keyboard shortcuts to
                 make your screen reader experience with Gemini fast and efficient.</p>
 
-            <a href="[LINK_TO_CHROME_WEB_STORE]" class="cta-button">
+            <a href="https://chromewebstore.google.com/detail/pagelive/kachdjbdcmofjmaoklcfofbcnlakfnbb"
+                class="cta-button">
                 ⚡ Add PageLive to Chrome (It's Free)
             </a>
             <p style="margin-top: 15px; font-size: 0.95em;">Built by a screen reader user, for screen reader users.</p>
@@ -168,18 +175,25 @@
                     <tr>
                         <td>Review Last Response</td>
                         <td><code>Ctrl + Shift + Enter</code></td>
-                        <td>Quickly re-read the AI's last reply.</td>
+                        <td>Quickly re-read the Gemini's last response.</td>
                     </tr>
                     <tr>
-                        <td>Toogle <strong>Page Info Dialog</strong></td>
+                        <td>Toggle <strong>Page Info</strong> dialog</td>
                         <td><code>Ctrl + /</code></td>
                         <td>Get a quick overview of the current page and access all PageLive keyboard shortcuts.</td>
                     </tr>
                     <tr>
-                        <td>Jump to Chat List on Side Navigation</td>
-                        <td>Press <code>Enter</code> on Heading 1 in the Page Info dialog</td>
-                        <td>Quickly move focus to the previous chat list on side navigation. From here users can switch
-                            to other chat or access Gemini's each chat action menu, e.g.: rename, etc.</td>
+                        <td>Toggle <strong>Content Map</strong> dialog</td>
+                        <td><code>Ctrl + M</code></td>
+                        <td>View a quick **snapshot** of the active chat history and jump directly to any previous
+                            prompt or
+                            response.</td>
+                    </tr>
+                    <tr>
+                        <td>Jump to Chat List</td>
+                        <td>Press <code>Enter</code> on the chat title (Heading 1) in the <strong>Page Info</strong>
+                            dialog (<code>Ctrl + /</code>)</td>
+                        <td>Quickly move focus from the chat window to the list of previous chats.</td>
                     </tr>
                     <tr>
                         <td>Start New Chat</td>
@@ -187,24 +201,24 @@
                         <td>Clear the deck and begin fresh in a single press.</td>
                     </tr>
                     <tr>
-                        <td>Delete Current Chat</td>
+                        <td>Delete active Chat</td>
                         <td><code>Ctrl + Shift + Backspace</code></td>
-                        <td>Efficiently remove the current chat from your list. This show Gemini's default chat deletion
-                            confirmation</td>
+                        <td>Trigger Gemini's confirmation dialog to delete the active chat. User needs to select and
+                            click the <strong>Delete button</strong> to confirm</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <section class="section-content">
-            <h2>Content Map: Your Conversation Roadmap</h2>
-            <p>The <strong>Content Map</strong> (<kbd>Ctrl</kbd> + <kbd>M</kbd>) gives you a brief, sequential summary
-                of everything that has been asked
-                and answered in the current chat. This helps you quickly regain context and understand the flow of a
-                long conversation.</p>
+            <h2>Content Map dialog: Your Conversation Roadmap</h2>
+            <p>The <strong>Content Map</strong> dialog (<kbd>Ctrl</kbd> + <kbd>M</kbd>) gives you a brief, sequential
+                summary of everything that has been
+                asked and answered in the current chat. This helps you quickly regain context and understand the flow of
+                a long chat.</p>
             <ul>
                 <li><strong>Quick Jump</strong>: Each summary entry in the dialog is a button. Pressing
-                    <code>Enter</code> on any
+                    <kbd>Enter</kbd> on any
                     prompt or response will close the map and immediately move your focus to that specific item on the
                     main page.
                 </li>
@@ -214,7 +228,8 @@
         <section class="section-content">
             <h2>Technical Details</h2>
             <ul>
-                <li><strong>Designed for Accessibility</strong>:PageLive is a screen reader companion developed and
+                <li>
+                    <strong>Designed for Accessibility</strong>: PageLive is a screen reader companion developed and
                     tested with NVDA, leveraging standard HTML ARIA attributes for broad compatibility (including JAWS).
                 </li>
                 <li><strong>Current Version</strong>: 3.0.0</li>
@@ -224,11 +239,13 @@
 
         <footer class="footer">
             <h3>Ready to Chat Smarter?</h3>
-            <a href="[LINK_TO_CHROME_WEB_STORE]" class="cta-button">
+            <a href="https://chromewebstore.google.com/detail/pagelive/kachdjbdcmofjmaoklcfofbcnlakfnbb"
+                class="cta-button">
                 Install PageLive Today
             </a>
             <p style="margin-top: 20px; font-size: 0.8em; color: #777;">&copy; 2025 PageLive. All rights reserved.</p>
         </footer>
+
     </div>
 </body>
 
