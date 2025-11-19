@@ -145,6 +145,12 @@
             border-top: 1px solid #ddd;
             margin-top: 40px;
         }
+
+        .footer p {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
     </style>
 </head>
 
@@ -271,14 +277,14 @@
                 <dd>
                     Pressing <code>Enter</code> right after Page Info dialog is shown will quickly move focus from the
                     chat window to the corresponding chat in the list on side nav.
-                    previous chats. This will happen because the Heading 1 at the top of the Page Info is also a button.
+                    This will happen because the Heading 1 at the top of the Page Info is also a button.
                 </dd>
 
                 <dt>
                     <h3>Start New Chat</h3>
                 </dt>
                 <dd>
-                    Press <code>Ctrl + Alt + O</code> to clear the chat history and begin a fresh chat.
+                    Press <code>Ctrl + Alt + O</code> to clear the active chat and begin a fresh chat.
                 </dd>
 
                 <dt>
@@ -293,7 +299,7 @@
 
 
         <section class="section-content">
-            <h2>Content Map dialog: Your Conversation Roadmap</h2>
+            <h2>Content Map dialog: Your Chat Roadmap</h2>
             <p>The <strong>Content Map</strong> dialog (<kbd>Ctrl</kbd> + <kbd>M</kbd>) gives you a brief, sequential
                 summary of everything that has been
                 asked and answered in the current chat. This helps you quickly regain context and understand the flow of
@@ -303,6 +309,10 @@
                     <kbd>Enter</kbd> on any
                     prompt or response will close the map and immediately move your focus to that specific item on the
                     main page.
+                </li>
+                <li>
+                    <strong>Up for Older Responses</strong>: Move up to read older responses and prompts. More older
+                    responses, if any, will be loaded once we scroll close to the top.
                 </li>
             </ul>
         </section>
@@ -325,7 +335,7 @@
                 class="cta-button">
                 Install PageLive Today
             </a>
-            <p style="margin-top: 20px; font-size: 0.8em; color: #777;">&copy; 2025 PageLive. All rights reserved.</p>
+            <p>&copy; 2025 PageLive. All rights reserved.</p>
         </footer>
 
     </div>
