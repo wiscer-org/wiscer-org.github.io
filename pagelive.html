@@ -55,14 +55,14 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 40px 0;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+            margin-bottom: 15px;
+            padding: 0 12%;
         }
 
         .hero p {
             font-size: 1.2em;
-            margin-bottom: 25px;
+            margin: 60px 0;
             color: #555;
         }
 
@@ -123,6 +123,21 @@
             font-weight: bold;
         }
 
+        /* Definition List Styling */
+        dl {
+            padding-left: 0;
+        }
+
+        dt {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+
         /* Footer / Secondary CTA */
         .footer {
             text-align: center;
@@ -156,6 +171,7 @@
             </p>
         </section>
 
+        <!--
         <section class="section-content">
             <h2>Streamline Your Gemini Workflow</h2>
             <table>
@@ -185,9 +201,10 @@
                     <tr>
                         <td>Toggle <strong>Content Map</strong> dialog</td>
                         <td><code>Ctrl + M</code></td>
-                        <td>View a quick **snapshot** of the active chat history and jump directly to any previous
-                            prompt or
-                            response.</td>
+                        <td>
+                            View a quick <em>snapshot</em> of the active chat history and jump directly to any previous
+                            prompt or response.
+                        </td>
                     </tr>
                     <tr>
                         <td>Jump to Chat List</td>
@@ -209,6 +226,71 @@
                 </tbody>
             </table>
         </section>
+        -->
+
+        <section class="section-content">
+            <h2>Streamline Your Gemini Workflow</h2>
+
+            <dl>
+                <dt>
+                    <h3>Jump to Input</h3>
+                </dt>
+                <dd>
+                    Press <code>Shift + Esc</code> to jump to input, allowing yout to instantly start typing your next
+                    prompt.
+                </dd>
+
+                <dt>
+                    <h3>Review Last Response</h3>
+                </dt>
+                <dd>
+                    Press <code>Ctrl + Shift + Enter</code>) to quickly re-read the Gemini's last response.
+                </dd>
+
+                <dt>
+                    <h3>Toggle Page Info dialog</h3>
+                </dt>
+                <dd>
+                    Press <code>Ctrl + /</code> to show Page Info dialog.
+                    Page Info dialog gives a quick overview of the current page and access
+                    all PageLive keyboard shortcuts.
+                </dd>
+
+                <dt>
+                    <h3>Toggle Content Map dialog</h3>
+                </dt>
+                <dd>
+                    Press <code>Ctrl + M</code> to show Content Map dialog.
+                    Content Map allow you to view a quick snapshot of the active chat history
+                    and jump directly to any previous prompt or response.
+                </dd>
+
+                <dt>
+                    <h3>Jump to Chat List</h3>
+                </dt>
+                <dd>
+                    Pressing <code>Enter</code> right after Page Info dialog is shown will quickly move focus from the
+                    chat window to the corresponding chat in the list on side nav.
+                    previous chats. This will happen because the Heading 1 at the top of the Page Info is also a button.
+                </dd>
+
+                <dt>
+                    <h3>Start New Chat</h3>
+                </dt>
+                <dd>
+                    Press <code>Ctrl + Alt + O</code> to clear the chat history and begin a fresh chat.
+                </dd>
+
+                <dt>
+                    <h3>Delete active Chat</h3>
+                </dt>
+                <dd>
+                    Press <code>Ctrl + Shift + Backspace</code> to trigger Gemini's confirmation dialog to delete the
+                    active chat. You then need to select and click the 'Delete' button to confirm.
+                </dd>
+            </dl>
+        </section>
+
 
         <section class="section-content">
             <h2>Content Map dialog: Your Conversation Roadmap</h2>
@@ -238,7 +320,7 @@
         </section>
 
         <footer class="footer">
-            <h3>Ready to Chat Smarter?</h3>
+            <h2>Ready to Chat Smarter?</h2>
             <a href="https://chromewebstore.google.com/detail/pagelive/kachdjbdcmofjmaoklcfofbcnlakfnbb"
                 class="cta-button">
                 Install PageLive Today
