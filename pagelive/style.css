@@ -6,7 +6,49 @@ body {
     color: #333;
     background-color: #f4f7f6;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-nav {
+    background-color: #1a73e8;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
     justify-content: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.top-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: normal;
+    transition: background-color 0.3s;
+}
+
+.top-nav a:hover {
+    background-color: #155bb5;
+}
+
+.top-nav a.active {
+    background-color: #155bb5;
+    font-weight: bold;
 }
 
 .container {
