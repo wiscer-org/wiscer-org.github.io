@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PageLive for Gemini: Faster Keyboard Navigation</title>
+    <title>PageLive for ChatGPT</title>
     <meta name="description"
-        content="PageLive features for Gemini, including keyboard workflows for power users and screen reader-focused reading and event announcements.">
+        content="PageLive features for ChatGPT, including keyboard workflows for power users and screen reader-focused reading and event announcements.">
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -21,8 +21,8 @@
     <div class="container">
 
         <header class="hero">
-            <h1>PageLive for Gemini</h1>
-            <p>Keyboard-first workflows and accessibility-friendly announcements to make Gemini navigation faster,
+            <h1>PageLive for ChatGPT</h1>
+            <p>Keyboard-first workflows and accessibility-friendly announcements to make ChatGPT navigation faster,
                 clearer, and more predictable.</p>
 
             <a href="/pagelive" class="cta-button">
@@ -31,8 +31,16 @@
         </header>
 
         <section class="section-content">
-            <h2>For Power Users</h2>
+            <h2>ChatGPT Default Features</h2>
+            <p>
+                For ChatGPT's default shortcuts can be viewed by pressing
+                <kbd>Ctrl</kbd>+<kbd>/</kbd>
+            </p>
+        </section>
 
+        <!-- 
+        <section class="section-content">
+            <h2>For Power Users</h2>
             <dl>
                 <dt>
                     <h3>Focus Chat Input</h3>
@@ -65,16 +73,17 @@
                 </dd>
             </dl>
         </section>
+    -->
 
         <section class="section-content">
             <h2>For Screen Reader Users</h2>
-
             <dl>
+                <!-- 
                 <dt>
                     <h3>Read Last Response</h3>
                 </dt>
                 <dd>
-                    Press <code>Ctrl + Shift + Enter</code> to hear the most recent Gemini response on demand.
+                    Press <code>Ctrl + Shift + Enter</code> to hear the most recent ChatGPT response on demand.
                 </dd>
 
                 <dt>
@@ -84,25 +93,31 @@
                     PageLive announces when a new assistant response is available, so you know when new content is
                     ready to read.
                 </dd>
+            -->
 
                 <dt>
-                    <h3>Dialog State Announcement</h3>
+                    <h3>Shortcut Dialog Close Announcement</h3>
                 </dt>
                 <dd>
-                    PageLive announces when Gemini shortcut dialogs open or close, giving event-driven status
-                    feedback during navigation.
+                    When ChatGPT shortcut dialog opens, screen reader announces it.
+                    However when you close the dialog, either by pressing <code>Escape</code> or pressing the
+                    close button, the dialog is closed without an announcement, which can be confusing.
+                    PageLive announces when the shortcut dialog is closed, so you have clear feedback.
                 </dd>
-
                 <dt>
-                    <h3>Read Formulas and Symbols</h3>
+                    <h3>Fix Unreadable Keyboard Shortcuts</h3>
                 </dt>
                 <dd>
-                    PageLive helps screen readers read formulas and symbols in Gemini responses.
-                    Without PageLive, these items will be invisible for screen readers.
+                    ChatGPT's keyboard shortcuts in the dialog can not be read by screen reader.
+                    PageLive copy append each keyboard shortcut to its corresponding label so they can be erad by screen
+                    reader.
+                    PageLive also translate some keyboard symbols to be readable, for example Enter key symbol and
+                    Escape key symbol.
                 </dd>
             </dl>
         </section>
 
+        <!-- 
         <section class="section-content">
             <h2>Use Cases</h2>
             <dl>
@@ -115,14 +130,15 @@
                 </dd>
 
                 <dt>
-                    <h3>Review Chat Flow with Content Map</h3>
+                    <h3>Read Last Response Without Context Switch</h3>
                 </dt>
                 <dd>
-                    Open ContentMap with <kbd>Ctrl + M</kbd> to review prompt and response summaries, then press
-                    <kbd>Enter</kbd> on any item to jump directly to that location in the chat history.
+                    Press <kbd>Ctrl + Shift + Enter</kbd> to read the most recent ChatGPT response without changing
+                    navigation context.
                 </dd>
             </dl>
         </section>
+        -->
 
         <footer class="footer">
             <div class="docs-nav">
